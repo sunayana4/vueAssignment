@@ -1,0 +1,88 @@
+ [{
+    "current" : {
+	"place" : "New Delhi",
+	"Celcius" : 12,
+	"Fahrenheit" :14,
+	"wheather" : "Rain",
+	"time" : "08:20"
+},
+"daily" :[{
+	"Celcius" : 12,
+	"Fahrenheit" :6,
+	"wheather" : "Moderate Rain",
+	"day" : "Sun 31"
+	},
+	{
+	"Celcius" : 5,
+	"Fahrenheit" :4,
+	"wheather" : "Rain",
+	"day" : "Mon 1"
+	},
+	{
+	"Celcius" : 9,
+	"Fahrenheit" :5,
+	"wheather" : "Light Rain",
+	"day" : "Tue 2"
+	},
+	{
+	"Celcius" : 12,
+	"Fahrenheit" :14,
+	"wheather" : "Rain",
+	"day" : "Wed 3"
+	},
+	{
+	"Celcius" : 7,
+	"Fahrenheit" :9,
+	"wheather" : "Rain",
+	"day" : "Thur 4"
+	},
+	{
+	"Celcius" : 2,
+	"Fahrenheit" :6,
+	"wheather" : "Light Rain",
+	"day" : "Fri 5"
+	},
+	{
+	"Celcius" : 4,
+	"Fahrenheit" :9,
+	"wheather" : "Moderate Rain",
+	"day" : "Sat 6"
+	}
+	],
+"hourly" :[{
+	"Celcius" : 12,
+	"wheather" : "Moderate Rain",
+	"time" : "09:00"
+	},
+	{
+	"Celcius" : 5,
+	"wheather" : "Rain",
+	"time" : "10:00"
+	},
+	{
+	"Celcius" : 9,
+	"wheather" : "Light Rain",
+	"time" : "12:00"
+	},
+	{
+	"Celcius" : 12,
+	"wheather" : "Rain",
+	"day" : "14:00"
+	},
+	{
+	"Celcius" : 7,
+	"wheather" : "Rain",
+	"time" : "17:00"
+	},
+	{
+	"Celcius" : 2,
+	"wheather" : "Light Rain",
+	"time" : "19:00"
+	},
+	{
+	"Celcius" : 4,
+	"wheather" : "Moderate Rain",
+	"time" : "22:00"
+	}
+	]
+}]
