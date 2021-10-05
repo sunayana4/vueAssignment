@@ -30,8 +30,7 @@
       <b-button type="submit" variant="primary">Submit</b-button>
     </b-form>
 
-
- <div class="calc-container">
+    <div class="calc-container">
       <div class="inner-container">
         <div class="display"></div>
       </div>
@@ -131,7 +130,8 @@
           </div>
         </div>
       </div>
-    </div><br/>
+    </div>
+    <br />
 
     <div>
       <div class="clock-header">
@@ -165,7 +165,6 @@
         </div>
       </div>
     </div>
-
   </div>
 </template>
 
@@ -181,7 +180,7 @@ export default {
       previous: null,
       operator: null,
       clickedOperator: false,
-      displayClockContent: '',
+      displayClockContent: "",
       displayDateContent: this.getCurrentTime(),
       isClockActive: false,
       formValues: {
@@ -219,10 +218,7 @@ export default {
       this.clickedOperator = false;
     },
     handleChange() {
-      // var that = this;
-      //  var timeInterval = '';
       this.isClockActive = !this.isClockActive;
-      console.log(this.isClockActive);
 
       if (this.isClockActive) {
         this.timeInterval = setInterval(this.getCurrentTime, 1000);
@@ -232,7 +228,6 @@ export default {
       }
     },
     handleOperator(newOperator) {
-      // console.log
       const numberValue = parseFloat(this.current);
       if (this.operator && this.clickedOperator) {
         this.operator = newOperator;
@@ -245,7 +240,6 @@ export default {
           numberValue,
           this.operator
         );
-        console.log("resut=== ", result);
         this.current = String(result);
         this.previous = result;
       }
@@ -267,7 +261,6 @@ export default {
       }
     },
     appendNumber(number) {
-      console.log("number ===", number);
       if (this.clickedOperator) {
         this.clickedOperator = false;
         this.current = number;
@@ -288,7 +281,6 @@ export default {
       this.displayDateContent = `${weekday} ${day} ${month} ${new Date().getUTCFullYear()}`;
     },
 
-   
     submitForm() {
       var newItemsArray = this.items.push({
         name: this.formValues.username,
@@ -299,22 +291,13 @@ export default {
       return newItemsArray;
     },
     deleteItem(rowItem, rowIndex, event) {
-      console.log(
-        "rowItem ==",
-        rowItem,
-        "rowIndex ==",
-        rowIndex,
-        "event == ",
-        event
-      );
       return this.items.splice(rowIndex, 1);
     },
   },
 
-   created(){
-      this.displayClockContent = `${new Date().getHours()} : ${new Date().getMinutes()} : ${new Date().getSeconds()}`;
-
-    },
+  created() {
+    this.displayClockContent = `${new Date().getHours()} : ${new Date().getMinutes()} : ${new Date().getSeconds()}`;
+  },
 };
 </script>
 
