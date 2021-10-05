@@ -30,9 +30,10 @@ export default {
   },
   created() {
     var that = this;
-    // console.log('this.baseUrl ===',this.baseUrl)
+    var baseUrl = window.location.origin;
+    //console.log('this.baseUrl ===',url);
     axios
-      .get("http://localhost:8080/whether.json")
+      .get(baseUrl+"/whether.json")
       .then((response) => {
         that.whetherData = response.data;
       })

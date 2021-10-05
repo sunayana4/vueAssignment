@@ -290,7 +290,7 @@ export default {
       this.formValues.job = "";
       return newItemsArray;
     },
-    deleteItem(rowItem, rowIndex, event) {
+    deleteItem( rowIndex) {
       return this.items.splice(rowIndex, 1);
     },
   },
